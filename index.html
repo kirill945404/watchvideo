@@ -4,12 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Player</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .video-container {
+            width: 100%;
+            max-width: 600px;
+            padding: 10px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <h1>Video Player</h1>
-    <video width="600" controls>
-        <source src="https://assets.mixkit.co/videos/43483/43483-720.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div class="video-container">
+        <h1>Video Player</h1>
+        <video controls>
+            <source src="https://assets.mixkit.co/videos/43483/43483-720.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 </body>
 </html>
