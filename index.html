@@ -1,63 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Player</title>
+    <title>HTML5 Video Player</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
         }
-        .video-container {
-            width: 100%;
-            max-width: 640px;
-            padding: 10px;
-        }
-        iframe {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 16 / 9;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border: none;
-        }
-        h1 {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-        .button-container {
-            margin-top: 20px;
-        }
-        .open-button {
-            padding: 10px 20px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .open-button:hover {
-            background-color: #0056b3;
+        #video {
+            width: 640px;
+            height: 360px;
         }
     </style>
 </head>
 <body>
-    <div class="video-container">
-        <h1>Video Player</h1>
-        <iframe src="https://vk.com/video_ext.php?oid=-129716348&id=456239086&hash=340a4ee7759c1c3b" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </div>
-    <div class="button-container">
-        <a href="https://vk.com/video_ext.php?oid=-129716348&id=456239086&hash=340a4ee7759c1c3b" target="_blank" class="open-button">Открыть в полноэкранном режиме</a>
-    </div>
+    <video id="video" controls autoplay>
+        <source src="http://127.0.0.1:6878/ace/getstream?id=b28db77c5084da7993395d77df96c30bb134f0a9" type="application/x-mpegURL">
+        Your browser does not support the video tag.
+    </video>
 </body>
 </html>
