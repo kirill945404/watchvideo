@@ -19,11 +19,13 @@
             max-width: 600px;
             padding: 10px;
         }
-        video {
+        iframe {
             width: 100%;
             height: auto;
+            aspect-ratio: 16 / 9;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: none;
         }
         h1 {
             text-align: center;
@@ -35,10 +37,7 @@
 <body>
     <div class="video-container">
         <h1>Video Player</h1>
-        <video controls>
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <iframe src='https://my.mail.ru/video/embed/4890275348345784543' frameborder='0' scrolling='no' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
 </body>
 </html>
