@@ -1,4 +1,23 @@
-<video controls width="640" height="360">
-   <source src="http://192.168.68.70:8080" type="video/ogg">
-   Your browser does not support the video tag.
-</video>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace Player Web</title>
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container" style="text-align: center; margin-top: 50px;">
+        <video id="my-video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="480">
+            <source src="http://127.0.0.1:6878/ace/getstream?id=b28db77c5084da7993395d77df96c30bb134f0a9" type="video/mp4">
+            Текущее видео недоступно.
+        </video>
+    </div>
+
+    <!-- Подключаем библиотеку Video.js -->
+    <script src="https://vjs.zencdn.net/7.11.4/video.js"></script>
+
+    <!-- Ваш собственный JavaScript код -->
+    <script src="script.js"></script>
+</body>
+</html>
